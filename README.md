@@ -41,4 +41,5 @@ gcc -o Server server.c logger.c utility_functions.c
 gcc -o Client client.c logger.c utility_functions.c
 
 Successivamente, per avviare il Server e i vari Clients, sarà sufficiente avviare i file binari dalla console attraverso i comandi ./Server e ./Client
+
 Se si è curiosi di sapere come stanno andando i processi attivati dal Server e dai vari Clients sulla porta impegnata per le comunicazioni (di default per il progetto è la 8080), si può aprire una nuova console e digitare il comando: lsof -i :8080
