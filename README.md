@@ -33,11 +33,12 @@ E' caldamente sconsigliato utilizzare il codice di questo progetto all'interno d
 
 Non mi assumo alcuna responsabilità derivato dall'uso che viene fatto del codice sia in ambito privato che professionale.
 
-# NOTA BENE
-In questo progetto, non essendoci presenti i file CMake per poter compilare i file necessari al Server ed ai Clients, di seguito ci sono i comandi da avviare in console quando ci si trova nella folder dove saranno presenti i file di questo progetto:
+# PER AVVIARE IL SISTEMA
+In questo progetto, non essendo presenti i file CMake utili per poter compilare in velocità i file necessari al Server ed ai Clients, di seguito vengono forniti i comandi da avviare in console quando ci si trova nella folder dove saranno presenti i file di questo progetto:
 
 gcc -o Server server.c logger.c utility_functions.c
     
 gcc -o Client client.c logger.c utility_functions.c
 
 Successivamente, per avviare il Server e i vari Clients, sarà sufficiente avviare i file binari dalla console attraverso i comandi ./Server e ./Client
+Se si è curiosi di sapere come stanno andando i processi attivati dal Server e dai vari Clients sulla porta impegnata per le comunicazioni (di default per il progetto è la 8080), si può aprire una nuova console e digitare il comando: lsof -i :8080
