@@ -1,5 +1,5 @@
 # Linux_group_chat
-Chat comune con sistema Client-Server scritto in linguaggio C e compatibile con sistemi Linux.
+Chat comune in architettura Client-Server scritto in linguaggio C e compatibile con i sistemi Linux.
 
 Il seguente progetto in C è stato realizzato attraverso l'uso delle librerie di Linux e rappresenta un sistema di Client e Server in locale che permette ai vari Client (max. 10 collegati contemporaneamente) di parlare all'interno di una chat comune.
 
@@ -32,3 +32,12 @@ Il codice contenuto all'interno di questo progetto della chat comune è stato re
 E' caldamente sconsigliato utilizzare il codice di questo progetto all'interno di un Web Server pubblico per via della sua fragilità ma soprattutto per le falle di sicurezza contenute. Da usare a vostro rischio e pericolo per dei server di produzione!
 
 Non mi assumo alcuna responsabilità derivato dall'uso che viene fatto del codice sia in ambito privato che professionale.
+
+# NOTA BENE
+In questo progetto, non essendoci presenti i file CMake per poter compilare i file necessari al Server ed ai Clients, di seguito ci sono i comandi da avviare in console quando ci si trova nella folder dove saranno presenti i file di questo progetto:
+
+gcc -o Server server.c logger.c utility_functions.c
+    
+gcc -o Client client.c logger.c utility_functions.c
+
+Successivamente, per avviare il Server e i vari Clients, sarà sufficiente avviare i file binari dalla console attraverso i comandi ./Server e ./Client
