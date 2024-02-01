@@ -27,19 +27,19 @@ Facendo un elenco pratico dei possibili miglioramenti che si potrebbero implemen
 - Una funzione che avvisa gli altri Clients già collegati alla chat dell'avvenuta connessione di un nuovo ospite
 - Una funzione che elenca i nomi dei Clients già connessi alla chat da fornire al nuovo ospite
 
-# ATTENZIONE!!
+## ATTENZIONE!!
 Il codice contenuto all'interno di questo progetto della chat comune è stato realizzato a scopo accademico universitario per allenarmi all'uso del linguaggio C (e la sua enorme complessità per quanto il progetto non sia di per sè avanzato) su base Ubuntu Linux.
 E' caldamente sconsigliato utilizzare il codice di questo progetto all'interno di un Web Server pubblico per via della sua fragilità ma soprattutto per le falle di sicurezza contenute. Da usare a vostro rischio e pericolo per dei server di produzione!
 
 Non mi assumo alcuna responsabilità derivato dall'uso che viene fatto del codice sia in ambito privato che professionale.
 
-# PER AVVIARE IL SISTEMA
+## PER AVVIARE IL SISTEMA
 In questo progetto, non essendo presenti i file CMake utili per poter compilare in velocità i file necessari al Server ed ai Clients, di seguito vengono forniti i comandi da avviare in console quando ci si trova nella folder dove saranno presenti i file di questo progetto:
 
-gcc -o Server server.c logger.c utility_functions.c
+**gcc -o Server server.c logger.c utility_functions.c**
     
-gcc -o Client client.c logger.c utility_functions.c
+**gcc -o Client client.c logger.c utility_functions.c**
 
-Successivamente, per avviare il Server e i vari Clients, sarà sufficiente avviare i file binari dalla console attraverso i comandi ./Server e ./Client
+Successivamente, per avviare il Server e i vari Clients, sarà sufficiente avviare i file binari dalla console attraverso i comandi **./Server** e **./Client**
 
-Se si è curiosi di sapere come stanno andando i processi attivati dal Server e dai vari Clients sulla porta impegnata per le comunicazioni (di default per il progetto è la 8080), si può aprire una nuova console e digitare il comando: lsof -i :8080
+Se si è curiosi di sapere come stanno andando i processi attivati dal Server e dai vari Clients sulla porta impegnata per le comunicazioni (di default per il progetto è la 8080), si può aprire una nuova console e digitare il comando: **lsof -i :8080**
